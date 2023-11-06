@@ -21,3 +21,11 @@ function total(...theNumbers) {
 	}
 	return sum
 }
+
+
+// test
+
+let num1 = 100;
+let num2 = "10";
+let sum2 = num1 + Number(num2);
+console.log(sum2)
