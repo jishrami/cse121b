@@ -62,6 +62,24 @@ document.querySelector('#divideNumbers').addEventListener('click', divideNumbers
 
 /* Decision Structure */
 
+function calculateTotal() {
+    let subtotal = parseFloat(document.getElementById('subtotal').value);
+
+    let isMember = document.getElementById('member').checked;
+
+    let total;
+
+    if (isMember) {
+        total = subtotal - (subtotal * .15)
+    } else {
+        total = subtotal
+    }
+
+    document.getElementById('total').textContent = `$${total.toFixed(2)}`;
+}
+
+document.getElementById('getTotal').addEventListener('click', calculateTotal);
+
 /* ARRAY METHODS - Functional Programming */
 /* Output Source Array */
 
