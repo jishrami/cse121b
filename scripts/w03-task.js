@@ -21,7 +21,7 @@ document.querySelector('#addNumbers').addEventListener('click', addNumbers);
 /* Function Expression - Subtract Numbers */
 
 function subtract (number1, number2) {
-    return number1 - number2
+    return number1 - number2;
 }
 
 function subtractNumbers (){
@@ -29,10 +29,10 @@ function subtractNumbers (){
 
     let subNumber2 = Number(document.querySelector('#subtract2').value);
 
-    document.querySelector('#difference').value = subtract(subNumber1, subNumber2)
+    document.querySelector('#difference').value = subtract(subNumber1, subNumber2);
 }
 
-document.querySelector('#subtractNumbers').addEventListener('click', subtractNumbers)
+document.querySelector('#subtractNumbers').addEventListener('click', subtractNumbers);
 
 /* Arrow Function - Multiply Numbers */
 
@@ -45,7 +45,7 @@ const multiplyNumbers = () => {
     document.querySelector('#product').value = multiply(factor1, factor2);
 };
 
-document.querySelector('#multiplyNumbers').addEventListener('click', multiplyNumbers)
+document.querySelector('#multiplyNumbers').addEventListener('click', multiplyNumbers);
 
 /* Open Function Use - Divide Numbers */
 
@@ -58,16 +58,16 @@ const divideNumbers = () => {
     document.querySelector('#quotient').value = divide(dividend1, divisor1);
 };
 
-document.querySelector('#divideNumbers').addEventListener('click', divideNumbers)
+document.querySelector('#divideNumbers').addEventListener('click', divideNumbers);
 
 /* Decision Structure */
 
 /* ARRAY METHODS - Functional Programming */
 /* Output Source Array */
 
-let numbersArray = [1,2,3,4,5,6,7,8,9,10,11,12,13]
+let numbersArray = [1,2,3,4,5,6,7,8,9,10,11,12,13];
 
-document.getElementById('array').innerHTML = numbersArray.join(', ')
+document.getElementById('array').innerHTML = numbersArray.join(', ');
 
 /* Output Odds Only Array */
 const filterOdd = (array) => {
@@ -104,4 +104,4 @@ document.getElementById('multiplied').innerHTML = arrayByTwo;
 
 let arrayByTwoSum = arrayByTwo.reduce((sum, number) => sum + number, 0)
 
-document.getElementById('sumOfMultiplied').innerHTML = arrayByTwoSum
+document.getElementById('sumOfMultiplied').innerHTML = arrayByTwoSum;
