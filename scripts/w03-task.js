@@ -49,7 +49,7 @@ document.querySelector('#multiplyNumbers').addEventListener('click', multiplyNum
 
 /* Open Function Use - Divide Numbers */
 
-const divide = (number1, number2) => number1 * number2;
+const divide = (number1, number2) => number1 / number2;
 
 const divideNumbers = () => {
     let dividend1 = Number(document.querySelector('#dividend').value);
